@@ -15,21 +15,31 @@
 
 <body>
     <header>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="">Milton</a></li>
-                <li><a href="">Features</a></li>
-                <li><a href="">Testimonial</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Blog</a></li>
-                <li><button>Log in</button></li>
-                <li><button>Get started</button></li>
-            </ul>
-        </nav>
+        <div class="nav-bar-container">
 
-        <hr>
-    
+            <nav>
+                <ul class="nav-list">
+                    <div class="outer-container nav-outer-container">
+                        
+                        <div>
+                            <li class="nav-list-item logo"><a href=""><i class="fa-solid fa-play"></i> Milton</a></li>
+                        </div>
+                        <div>
+                            <li class="nav-list-item"><a href="#features">Features</a></li>
+                            <li class="nav-list-item"><a href="#testimonials">Testimonial</a></li>
+                            <li class="nav-list-item"><a href="#pricing">Pricing</a></li>
+                            <li class="nav-list-item"><a href="#faqs">FAQs</a></li>
+                            <li class="nav-list-item"><a href="#">Blog</a></li>
+                        </div>
+                        <div>
+                            <li class="nav-list-item"><button class="nav-white-button">Log in</button></li>
+                            <li class="nav-list-item"><button class="nav-black-button">Get started</button></li>
+                        </div>
+                    </div>
+                </ul>
+            </nav>    
+        </div>
+        
     </header>
     
     <main>
@@ -52,7 +62,7 @@
             <img src="images/img1.webp" alt="img1">
         </div>
 
-        <section class="section2">
+        <section class="section2" id="features">
             <button class="section-top-button">Our main features 🦸🏼</button>
             <div class="main-heading-container-section2">
                 <h1 class="main-heading mh2-font-size">Discover your new superpowers</h1>
@@ -219,7 +229,7 @@
         </section>
 
 
-        <section class="section3">
+        <section class="section6" id="testimonials">
             <button class="section-top-button">They already love our products 😍</button>
             <div class="main-heading-container-section2">
                 <h1 class="main-heading mh2-font-size">See what our users say about us</h1>
@@ -227,7 +237,7 @@
         </section>
 
 
-        <section class="section3">
+        <section class="section3" id="pricing">
             <button class="section-top-button">Pricing and plans 💰</button>
             <div class="main-heading-container-section2">
                 <h1 class="main-heading mh2-font-size">Find the best plan for your needs</h1>
@@ -238,67 +248,75 @@
                     <button class="inline-box2">Annually</button>
                 </div>
                 <div class="inline-box3">✨ save 30%</div>
-            </div>
-
-            <div class="plan-card">
-                <button class="section-top-button">Free</button>
-                <p>So you can see how incredible our tool is. </p>
-                <p><span class="plan-price">$0 </span>/mo</p>
-                <p class="plan-details">Free for ever</p>
-                <div class="plan-button-container">
-                    <button class="black-button plan-button" >Get started</button>
-                    <p class="plan-button-description">No credit card needed</p>
+                <div class="inline-box4">
+                    <div class="section-top-button">Best deal 🔥</div>
                 </div>
-
-                <p class="plan-features-heading">What's included:</p>
-                <p><i class="fa-solid fa-check"></i> A cool feature</p>
-                <p><i class="fa-solid fa-check"></i> A basic feature</p>
-                <p><i class="fa-solid fa-check"></i> A top feature with limitations</p>
-                <p><i class="fa-solid fa-check"></i> An incredible feature so useful</p>
-                <p><i class="fa-solid fa-check"></i> A top feature</p>
-
             </div>
 
+            <div class="outer-container">
 
-            
-            <div class="plan-card">
-                <button class="section-top-button">Starter</button>
-                <p>So you can see how incredible our tool is. </p>
-                <p><span class="plan-price">$19 </span>/mo</p>
-                <p class="plan-details">Billed monthly</p>
-                <div class="plan-button-container">
-                    <button class="black-button plan-button" >Get started</button>
-                    <p class="plan-button-description">7 days free trial no credit card needed</p>
-                </div>
-
-                <p class="plan-features-heading">What's included:</p>
-                <p><i class="fa-solid fa-check"></i> A cool feature</p>
-                <p><i class="fa-solid fa-check"></i> A basic feature</p>
-                <p><i class="fa-solid fa-check"></i> A top feature with limitations</p>
-                <p><i class="fa-solid fa-check"></i> An incredible feature so useful</p>
-                <p><i class="fa-solid fa-check"></i> A cool feature</p>
-
-            </div>
-
-
-            <div class="plan-card">
-                <button class="section-top-button">Pro</button>
-                <p>So you can see how incredible our tool is. </p>
-                <p><span class="plan-price">$49 </span>/mo</p>
-                <p class="plan-details">Billed monthly</p>
-                <div class="plan-button-container">
-                    <button class="black-button plan-button" >Get started</button>
-                    <p class="plan-button-description">7 days free trial no credit card needed</p>
+                <div class="plan-card">
+                    <button class="section-top-button">Free</button>
+                    <p>So you can see how incredible our tool is. </p>
+                    <p><span class="plan-price">$0 </span>/mo</p>
+                    <p class="plan-details">Free for ever</p>
+                    <div class="plan-button-container">
+                        <button class="black-button plan-button" >Get started</button>
+                        <p class="plan-button-description">No credit card needed</p>
+                    </div>
+                    
+                    <p class="plan-features-heading">What's included:</p>
+                    <p><i class="fa-solid fa-check"></i> A cool feature</p>
+                    <p><i class="fa-solid fa-check"></i> A basic feature</p>
+                    <p><i class="fa-solid fa-check"></i> A top feature with limitations</p>
+                    <p><i class="fa-solid fa-check"></i> An incredible feature so useful</p>
+                    <p><i class="fa-solid fa-check"></i> A top feature</p>
+                    <p>&nbsp;</p>
+                    
                 </div>
                 
-                <p class="plan-features-heading">All Starter features, plus:</p>
-                <p><i class="fa-solid fa-check"></i> A cool feature</p>
-                <p><i class="fa-solid fa-check"></i> A basic feature</p>
-                <p><i class="fa-solid fa-check"></i> A top feature with limitations</p>
-                <p><i class="fa-solid fa-check"></i> An incredible feature so useful</p>
-                <p><i class="fa-solid fa-check"></i> A premium feature</p>
-                <p><i class="fa-solid fa-check"></i> You need this feature</p>
                 
+                
+                <div class="plan-card">
+                    <button class="section-top-button bg-orange">Starter</button>
+                    <p>So you can see how incredible our tool is. </p>
+                    <p><span class="plan-price">$19 </span>/mo</p>
+                    <p class="plan-details">Billed monthly</p>
+                    <div class="plan-button-container">
+                        <button class="black-button plan-button" >Get started</button>
+                        <p class="plan-button-description">7 days free trial no credit card needed</p>
+                    </div>
+                    
+                    <p class="plan-features-heading">What's included:</p>
+                    <p><i class="fa-solid fa-check"></i> A cool feature</p>
+                    <p><i class="fa-solid fa-check"></i> A basic feature</p>
+                    <p><i class="fa-solid fa-check"></i> A top feature with limitations</p>
+                    <p><i class="fa-solid fa-check"></i> An incredible feature so useful</p>
+                    <p><i class="fa-solid fa-check"></i> A cool feature</p>
+                    <p>&nbsp;</p>
+                    
+                </div>
+                
+                
+                <div class="plan-card">
+                    <button class="section-top-button bg-light-red">Pro</button>
+                    <p>So you can see how incredible our tool is. </p>
+                    <p><span class="plan-price">$49 </span>/mo</p>
+                    <p class="plan-details">Billed monthly</p>
+                    <div class="plan-button-container">
+                        <button class="black-button plan-button" >Get started</button>
+                        <p class="plan-button-description">7 days free trial no credit card needed</p>
+                    </div>
+                    
+                    <p class="plan-features-heading">All Starter features, plus:</p>
+                    <p><i class="fa-solid fa-check"></i> A cool feature</p>
+                    <p><i class="fa-solid fa-check"></i> A basic feature</p>
+                    <p><i class="fa-solid fa-check"></i> A top feature with limitations</p>
+                    <p><i class="fa-solid fa-check"></i> An incredible feature so useful</p>
+                    <p><i class="fa-solid fa-check"></i> A premium feature</p>
+                    <p><i class="fa-solid fa-check"></i> You need this feature</p>
+                    
+                </div>
             </div>
 
             
@@ -307,25 +325,83 @@
         </section>
 
 
-        <section class="section4">
+        <section class="section4" id="faqs">
             <button class="section-top-button">Relevant stuff, bla bla 📣</button>
             <div class="main-heading-container-section2">
-                <h1 class="main-heading mh2-font-size">Frequently asked questions</h1>
+                <h1 class="main-heading mh2-font-size ">Frequently asked questions</h1>
             </div>
-            <div class="question">Can I cancel my subscrition?</div>
-            <div>You can cancel your plan whenever you'd like. You'll be downgraded to the free plan. You won't be locked out of any projects that have paid plans.</div>
 
-            <div>What happens when my trail ends?</div>
-            <div>When your trial period ends, your account will automatically be downgraded to our free plan, with limited features and functionality. To continue enjoying the full benefits of our service, you can upgrade to one of our paid plans at any time during or after the trial. Your data and settings will be preserved, ensuring a seamless transition as you move forward with our SaaS platform.</div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="outer-container faq-question-inline">
+                        <div class="faq-question">Can I cancel my subscrition?</div>
+                        <div class="expansion-and-compression-text"><i class="fa-solid fa-circle-plus fa-plus-or-minus"></i></div>
+                    </div>
+                    <div class="faq-description">You can cancel your plan whenever you'd like. You'll be downgraded to the free plan. You won't be locked out of any projects that have paid plans.</div>
+                </div>
 
-            <div>What payment methods do you offer?</div>
-            <div>We aim to provide a seamless experience for our customers. We accept a variety of payment methods, including major credit cards (Visa, MasterCard, American Express, and Discover), PayPal, and bank transfers.</div>
+                <div class="faq-item">
+                    <div class="outer-container faq-question-inline">
+                        <div class="faq-question">What happens when my trail ends?</div>
+                        <div class="expansion-and-compression-text"><i class="fa-solid fa-circle-plus fa-plus-or-minus"></i></div>
+                    </div>
+                    <div class="faq-description">When your trial period ends, your account will automatically be downgraded to our free plan, with limited features and functionality. To continue enjoying the full benefits of our service, you can upgrade to one of our paid plans at any time during or after the trial. Your data and settings will be preserved, ensuring a seamless transition as you move forward with our SaaS platform.</div>
+                </div>
 
-            <div>What is your refund policy?</div>
-            <div>Our refund policy is designed with customer satisfaction in mind. If you are not satisfied with our service, you can request a full refund within 30 days of your initial purchase. To initiate the refund process, please contact our support team through the "Help" section in your account or email us at support@Milton.com, and we'll be happy to assist you.</div>
+                <div class="faq-item">
+                    <div class="outer-container faq-question-inline">
+                        <div class="faq-question">What payment methods do you offer?</div>
+                        <div class="expansion-and-compression-text"><i class="fa-solid fa-circle-plus fa-plus-or-minus"></i></div>
+                    </div>
+                    <div class="faq-description">We aim to provide a seamless experience for our customers. We accept a variety of payment methods, including major credit cards (Visa, MasterCard, American Express, and Discover), PayPal, and bank transfers.</div>
+                </div>
 
-            <div>Do you offer discounts to educational institutions ?</div>
-            <div>Yes, we are happy to support educational institutions by offering special discounts on our SaaS platform. Please reach out to our sales team at sales@Milton.com with your institution's details, and we will provide you with more information on our exclusive educational pricing options.</div>
+                <div class="faq-item">
+                    <div class="outer-container faq-question-inline">
+                        <div class="faq-question">What is your refund policy?</div>
+                        <div class="expansion-and-compression-text"><i class="fa-solid fa-circle-plus fa-plus-or-minus"></i></div>
+                    </div>
+                    <div class="faq-description">Our refund policy is designed with customer satisfaction in mind. If you are not satisfied with our service, you can request a full refund within 30 days of your initial purchase. To initiate the refund process, please contact our support team through the "Help" section in your account or email us at support@Milton.com, and we'll be happy to assist you.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="outer-container faq-question-inline">
+                        <div class="faq-question">Do you offer discounts to educational institutions ?</div>
+                        <div class="expansion-and-compression-text"><i class="fa-solid fa-circle-plus fa-plus-or-minus"></i></div>
+                    </div>
+                    <div class="faq-description">Yes, we are happy to support educational institutions by offering special discounts on our SaaS platform. Please reach out to our sales team at sales@Milton.com with your institution's details, and we will provide you with more information on our exclusive educational pricing options.</div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+
+        <section class="section5">
+            <button class="section-top-button">Last call Baby! 🚀</button>
+            <div class="main-heading-container-section2">
+                <h1 class="main-heading mh2-font-size ">Ready to start?</h1>
+            </div>
+
+            <div class="main-heading-description section5-description">
+                Here is your last chance to explain how cool your app is. Focus on the benefits for your users, not on the features. 
+            </div>
+
+            <div class="button-container1">
+                <button class="black-button">Get started, it's free</button>
+            </div>
+
+            <div class="outer-container section5-avatar-review-box two">
+                <div class="avartar-container-part1 one"></div>
+                <p class="avatar-comment1 one">I never missed a call again, the AI-drivenfeature is a game changer for me! </p>
+            </div>
+            <div class="outer-container section5-avatar-review-box two">
+                <div class="avartar-container-part2 one"><img src="images/avatar5.webp" alt="avartar1"></div>
+                <p class="avatar-comment2 one">Adam, Solo founder</p>
+            </div>
+
         </section>
 
 
@@ -333,6 +409,56 @@
 
 
     </main>
+
+
+    <footer class="footer-section">
+
+        <div class="outer-container footer-container">
+            <div>
+                <h3 class="logo"><i class="fa-solid fa-play"></i> Milton</h3>
+                <p>A short text explaining why my startup is so cool</p>
+                <p>© My super start-up</p>
+                <p class="social-icons"><i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-linkedin"></i></p>
+            </div>
+            <div>
+                <h3>Products</h3>
+                <p><a href="#features">Features</a></p>
+                <p><a href="#testimonials">Testimonials</a></p>
+                <p><a href="#pricing">Pricing</a></p>
+                <p><a href="#faqs">FAQs</a></p>
+            </div>
+            <div>
+                <h3>Resources</h3>
+                <p><a href="#">Change log</a></p>
+                <p><a href="#">Help center</a></p>
+                <p><a href="#">Blog</a></p>
+                <p><a href="#">Contact</a></p>
+            </div>
+
+            
+            <div>
+                <h3>Others</h3>
+                <p><a href="">Privacy</a></p>
+                <p><a href="">Terms</a></p>
+                <p><a href="">Affiliation</a></p>
+                <p><a href="">Press</a></p>
+
+            </div>
+            <div>
+                <h3>From the blog</h3>
+                <p><a href="">Mastering Your Schedule: Top Time Management Techniques for Balancing Work and Life</a></p>
+                <p><a href="">Organizing Your Calendar for Enhanced Productivity and Focus</a></p>
+                <p><a href="">The Power of Prioritization: Effective Strategies for Managing Your Time and Tasks</a></p>
+                <p><a href="">Maximizing Your Minutes: Essential Tips for Streamlining Your Daily Routine and Calendar</a></p>
+            </div>
+
+        </div>
+
+
+
+
+    </footer>
+
     <script src="script.js"></script>
     <script type="text/javascript" src="https://embed.praisehive.com/js/embed.js"></script>
 </body>

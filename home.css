@@ -1,31 +1,120 @@
 *{
     font-family: 'Plus Jakarta Sans', sans-serif;
-
+    scroll-behavior: smooth;
 }
 body{
     padding: 0;
     margin : 0;
     background-color: #FEF9F6;
-    width: 90%;
     margin: auto;
 }
 
 
+/* Header */
+
+
+nav{
+    top: 0;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #FEF9F6;
+    border-bottom: 1px solid #DFDEDE;
+}
 
 .nav-list{
     padding: 0;
     margin: 0;
+    font-weight: bold;
 }
+
+.nav-list-item{
+    display: inline;
+    padding: 10px;
+}
+
+.nav-list-item a{
+    text-decoration: none;
+    color: #6B6B78;
+    padding: 0 5px;
+}
+
+.nav-list-item a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.nav-outer-container div{
+    margin: auto;
+}
+
+
+.nav-white-button{
+    color: #2E2E2E;
+    border-radius: 12px;
+    padding: 10px 30px;
+    background-color: #F1F2F4;
+    border: none;
+    font-weight: bold;
+    font-size: medium;
+    transition: ease 0.5s;
+}
+.nav-black-button{
+    color: #FEFEFE;
+    border-radius: 12px;
+    padding: 10px 30px;
+    background-color: #2E2E2E;
+    border: none;
+    font-weight: bold;
+    font-size: medium;
+    transition: ease 0.5s;
+}
+
+.nav-white-button:hover{
+    transform: scale(1.1);
+}
+
+.nav-black-button:hover{
+    transform: scale(1.1);
+}
+
 
 /* Section1 */
 
 
-.section1, .section2, .section3{
+main{
+    width: 90%;
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
     margin: auto;
 }
 
+.section1{
+    margin-top: 150px;
+}
+
+.logo{
+    color: black;
+    font-weight: bold;
+}
+
+.logo a{
+    color: black;
+}
+
+.logo a:hover{
+    text-decoration: none;
+}
+
+.fa-play{
+    background-color: #F1F2F4;
+    color: black;
+    padding: 5px 5px;
+    padding-bottom: 2px;    
+    border-radius: 2px;
+    transform: rotate(-90deg);
+}
 
 .section-top-button{
     padding: 10px;
@@ -58,6 +147,7 @@ body{
     font-size: larger;
     font-weight: 500;
     color: #6B6B78;
+    padding-top: 30px;
 }
 
 
@@ -77,6 +167,7 @@ body{
 
 .button-container1{
     margin: 25px;
+    padding-top: 20px;
 }
 
 .button-container1-description{
@@ -94,6 +185,7 @@ body{
 
 .image-container{
     margin: 80px;
+    padding-top: 20px;
 }
 
 .image-container img{
@@ -266,15 +358,19 @@ body{
     line-height: 25px;
 }
 
-.section2{
-    margin-bottom: 100px;
+.section2, .section3, .section4, .section5, .section6{
+    padding-top: 150px;
+    /* margin: 1px 0; */
 }
 
 .inline-box-container{
     display: inline-flex;
     background-color: #F3F3F3;
-    padding: 2px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 20px 0;
 }
+
 
 .inline-box1{
     width: 150px;
@@ -283,23 +379,48 @@ body{
     color: black;
     border-radius: 5px;
     font-weight: bold;
+    font-size: large;
+    padding: 10px;
 }
+
+.inline-box1:hover, .inline-box2:hover{
+    cursor: pointer;
+}
+
 .inline-box2{
     width: 150px;
     border: none;
     background-color: transparent;
     font-weight: bold;
     color: #A1A1A9;
+    font-size: large;
+    padding: 10px;
 }
 
+.inline-box3{
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+.inline-box4{
+    width: fit-content;
+    background-color: black;
+    color: white;
+    margin: auto;
+    border-radius: 12px;
+}
+
+
 .plan-card{
+    z-index: -1;
     background-color: white;
     text-align: left;
     padding: 20px;
     border-radius: 20px;
     /* width: fit-content; */
-    width: 400px;
+    width: 370px;
     margin: auto;
+    margin-top: -20px;
 }
 
 .fa-check{
@@ -328,10 +449,119 @@ body{
 
 .plan-button{
     text-align: center;
-    width: 400px;
+    width: 370px;
 }
 
 .plan-button-description{
     font-size: x-small;
     font-weight: bold;
+}
+
+/* section 4 */
+
+
+.faq-list{
+    text-align: left;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.faq-item{
+    background-color: #F1F2F4;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.faq-question{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.faq-description{
+    margin-top: 10px;
+    color: #6B6B78;
+    font-weight: 500;
+}
+
+.faq-question-inline{
+    justify-content: space-between;
+}
+
+.fa-plus-or-minus{
+    color: #CBCBD1;
+    background-color: #90909E;
+    font-size: x-large;
+    border-radius: 50%;
+}
+
+
+/* section 5 */
+
+.section5{
+    margin: auto;
+    text-align: center;
+}
+
+
+.section5-description{
+    /* margin-top: 50px; */
+    font-size: 22px;
+    width: 45%;
+}
+
+
+
+
+
+/* Footer */
+
+footer{
+    background-color: #F1F2F4;
+    padding: 50px 0;
+}
+
+
+.footer-container{
+    margin: auto;
+    width: 90%;
+}
+
+.footer-container div{
+    margin: auto;
+    text-align: left;
+    margin: 0 65px;
+}
+
+.footer-container div a{
+    text-decoration: none;
+    color: #6B6B78;
+}
+
+.footer-container div p{
+    color: #6B6B78;
+}
+
+.social-icons{
+    font-size: 25px;
+}
+
+.fa-brands{
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.fa-twitter{
+    background-color: #3A91D0;
+}
+
+.fa-facebook{
+    background-color: #334E94;
+}
+
+.fa-linkedin{
+    background-color: #334E94;
 }
